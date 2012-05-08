@@ -12,6 +12,7 @@ Usage:
 ------
 
 In your view:
+
     <table>
         <tr>
             <?php echo FormHelper::text('Fancy name goes here', $errors); ?>
@@ -22,6 +23,7 @@ In your view:
     </table>
 
 In your validation:
+
     $foo = Input::get('fancyNameGoesHere');
 
 There's a bunch of different form elements available in FormHelper:
