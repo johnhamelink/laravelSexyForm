@@ -6,14 +6,14 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- *     * Redistributions of source code must retain the above copyright
- *       notice, this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright
- *       notice, this list of conditions and the following disclaimer in the
- *       documentation and/or other materials provided with the distribution.
- *     * Neither the name of John Hamelink nor the
- *       names of its contributors may be used to endorse or promote products
- *       derived from this software without specific prior written permission.
+ * Redistributions of source code must retain the above copyright
+ * notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution.
+ * Neither the name of John Hamelink nor the names of its contributors 
+ * may be used to endorse or promote products derived from this software
+ * without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -45,10 +45,10 @@ class FormHelper {
     /**
      * If we have errors, display them inside a span with class "error"
      *
-     * @param $errors Object
-     * @param $safeName   String
-     * @param $prefix String
-     * @param $suffix String
+     * @param $errors   Object
+     * @param $safeName String
+     * @param $prefix   String
+     * @param $suffix   String
      *
      * @return String
      */
@@ -99,9 +99,9 @@ class FormHelper {
     /**
      * Create a text field, complete with errors, label and textbox
      *
-     * @param $name String
+     * @param $name   String
      * @param $errors Object
-     * @param $value String
+     * @param $value  String
      * @param $prefix String
      * @param $suffix String
      *
@@ -113,7 +113,7 @@ class FormHelper {
             $safeName = FormHelper::safeName($name);
         } else {
             $safeName = $name[0];
-            $name = $name[1];
+            $name     = $name[1];
         }
 
         // Rewrite default data with old flash-data
@@ -132,9 +132,9 @@ class FormHelper {
     /**
      * Create a textArea, complete with errors, label and textbox
      *
-     * @param $name String
+     * @param $name   String
      * @param $errors Object
-     * @param $value String
+     * @param $value  String
      * @param $prefix String
      * @param $suffix String
      *
@@ -146,7 +146,7 @@ class FormHelper {
             $safeName = FormHelper::safeName($name);
         } else {
             $safeName = $name[0];
-            $name = $name[1];
+            $name     = $name[1];
         }
 
         // Rewrite default data with old flash-data
@@ -165,7 +165,7 @@ class FormHelper {
     /**
      * Create a password, complete with errors, label and textbox
      *
-     * @param $name String
+     * @param $name   String
      * @param $errors Object
      * @param $prefix String
      * @param $suffix String
@@ -177,7 +177,7 @@ class FormHelper {
             $safeName = FormHelper::safeName($name);
         } else {
             $safeName = $name[0];
-            $name = $name[1];
+            $name     = $name[1];
         }
 
 
